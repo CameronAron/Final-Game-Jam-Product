@@ -4,21 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class lifeui : MonoBehaviour
+public class oreui : MonoBehaviour
 {
-    public mineral mineral;
+    public mineral ore;
     public TextMeshProUGUI text;
-//
-    float life = 0;
-    
-//    public Text ValueText;
-    
-        
+    //
+    float oree = 0;
+
+    //    public Text ValueText;
+
+
     private void Update()
     {
         //       ValueText.text = Value.ToString();
-        life = mineral.leafCurrency;
-        text.text = life.ToString();
+        oree = ore.oreCurrency;
+        text.text = oree.ToString();
 
 
     }
