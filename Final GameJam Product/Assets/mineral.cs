@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class mineral : MonoBehaviour
 {
-    float oreCurrency = 0;
+   public float ageCurrency = 0;
+    
+   public float oreCurrency = 0;
     public float OCT = 0;
     public float Ops = 0;
 
-    float leafCurrency = 0;
+   public  float leafCurrency = 0;
     public float LCT = 0;
     public float Lps = 0;
     // Start is called before the first frame update
     void Start()
     {
+        InvokeRepeating("currencychangeage", 0, 10f);
         InvokeRepeating("currencychangeore", 0, 1f);
         InvokeRepeating("currencychangeleaf", 0, 1f);
         InvokeRepeating("callcurrency", 0, 1f);
@@ -58,13 +61,18 @@ public class mineral : MonoBehaviour
     {
         Debug.Log(oreCurrency+" ore");
        
-        Debug.Log(oreCurrency+" leaf");
-       
+        Debug.Log(leafCurrency+" leaf");
+
+        Debug.Log(ageCurrency + " age");
+    }
+    void currencychangeage()
+    {
+        ageCurrency +=1;
     }
     void currencychangeleaf()
     {
 
-        oreCurrency += Lps;
+        leafCurrency += Lps;
 
 
         if (LCT == 1)
