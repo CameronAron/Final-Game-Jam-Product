@@ -2,22 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class lifeui : MonoBehaviour
 {
+    public mineral mineral;
+    public TextMeshProUGUI text;
 //
-    int Value = 0;
+    float life = 0;
+    
 //    public Text ValueText;
-    private void Start()
-    {
+    
         
-    }
-    public void Update()
+    private void Update()
     {
- //       ValueText.text = Value.ToString();
+        //       ValueText.text = Value.ToString();
+        life = mineral.ageCurrency;
+        text.text = life.ToString();
+
+
     }
 }
-
+//GetComponent<mineral>().ageCurrency;
 
 
 //
