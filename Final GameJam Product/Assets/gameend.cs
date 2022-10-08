@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class End : MonoBehaviour
+public class gameend : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,10 +14,10 @@ public class End : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   //     GetComponent<mineral>().ageCurrency;
-     //   if (ageCurrency >= 100)
+       
+       if (GetComponent<mineral>().ageCurrency >= 100)
         {
-     //       SceneManager.LoadScene(End);
+            SceneManager.LoadScene("End");
         }
     }
 }
