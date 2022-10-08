@@ -12,7 +12,11 @@ public class CameraMovement : MonoBehaviour
 
     Vector2 movement;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        transform.position = new Vector3(0, 0, -3);
+    }
+
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -26,27 +30,27 @@ public class CameraMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (rb.position.x > 10.001)
+        if (rb.position.x > 25.001)
         {
-            transform.position = new Vector3(10, transform.position.y, -3);
+            transform.position = new Vector3(25, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.x < -10.001)
+        if (rb.position.x < -25.001)
         {
-            transform.position = new Vector3(-10, transform.position.y, -3);
+            transform.position = new Vector3(-25, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.y > 5.001)
+        if (rb.position.y > 12.001)
         {
-            transform.position = new Vector3(transform.position.x, 5, -3);
+            transform.position = new Vector3(transform.position.x, 12, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.y < -5.001)
+        if (rb.position.y < -12.001)
         {
-            transform.position = new Vector3(transform.position.x, -5, -3);
+            transform.position = new Vector3(transform.position.x, -12, -3);
             //transform.position.x = 5.39;
         }
 
