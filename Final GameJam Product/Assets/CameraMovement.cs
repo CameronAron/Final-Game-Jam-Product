@@ -20,7 +20,7 @@ public class CameraMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            transform.position = new Vector3(0, 0, -1);
+            transform.position = new Vector3(0, 0, -3);
         }
     }
 
@@ -28,25 +28,25 @@ public class CameraMovement : MonoBehaviour
     {
         if (rb.position.x > 10.001)
         {
-            transform.position = new Vector3(10, transform.position.y, -1);
+            transform.position = new Vector3(10, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
         if (rb.position.x < -10.001)
         {
-            transform.position = new Vector3(-10, transform.position.y, -1);
+            transform.position = new Vector3(-10, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
         if (rb.position.y > 5.001)
         {
-            transform.position = new Vector3(transform.position.x, 5, -1);
+            transform.position = new Vector3(transform.position.x, 5, -3);
             //transform.position.x = 5.39;
         }
 
         if (rb.position.y < -5.001)
         {
-            transform.position = new Vector3(transform.position.x, -5, -1);
+            transform.position = new Vector3(transform.position.x, -5, -3);
             //transform.position.x = 5.39;
         }
 
