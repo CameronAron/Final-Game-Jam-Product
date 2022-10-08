@@ -19,7 +19,7 @@ public class CursorManager : MonoBehaviour
         cursorHotspot = new Vector2(DefaultCursor.width, DefaultCursor.height);
         Cursor.SetCursor(DefaultCursor, cursorHotspot, CursorMode.Auto);
         whatCursor = "default";
-        Debug.Log(whatCursor);
+        //Debug.Log(whatCursor);
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class CursorManager : MonoBehaviour
             cursorHotspot = new Vector2(DefaultCursor.width, DefaultCursor.height);
             Cursor.SetCursor(DefaultCursor, cursorHotspot, CursorMode.Auto);
             whatCursor = "default";
-            Debug.Log(whatCursor);
+            //Debug.Log(whatCursor);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -38,7 +38,7 @@ public class CursorManager : MonoBehaviour
             cursorHotspot = new Vector2(WaterCursor.width / 2, WaterCursor.height / 2);
             Cursor.SetCursor(WaterCursor, cursorHotspot, CursorMode.Auto);
             whatCursor = "water";
-            Debug.Log(whatCursor);
+            //Debug.Log(whatCursor);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -46,7 +46,7 @@ public class CursorManager : MonoBehaviour
             cursorHotspot = new Vector2(SunCursor.width / 2, SunCursor.height / 2);
             Cursor.SetCursor(SunCursor, cursorHotspot, CursorMode.Auto);
             whatCursor = "sun";
-            Debug.Log(whatCursor);
+            //Debug.Log(whatCursor);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -54,7 +54,7 @@ public class CursorManager : MonoBehaviour
             cursorHotspot = new Vector2(WindCursor.width / 2, WindCursor.height / 2);
             Cursor.SetCursor(WindCursor, cursorHotspot, CursorMode.Auto);
             whatCursor = "wind";
-            Debug.Log(whatCursor);
+            //Debug.Log(whatCursor);
         }
 
     }
