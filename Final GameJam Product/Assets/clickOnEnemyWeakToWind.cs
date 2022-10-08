@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clickOnEnemyWeakToSun : MonoBehaviour
+public class clickOnEnemyWeakToWind : MonoBehaviour
 {
     public CursorManager script;
     public float enemyMaxHealth = 20f;
@@ -14,11 +14,11 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
     {
         enemyCurrentHealth = enemyMaxHealth;
     }
-    
+
 
     void OnMouseDown()
     {
-        if (script.whatCursor == "sun")
+        if (script.whatCursor == "wind")
         {
             enemyCurrentHealth = enemyCurrentHealth - strongDamage;
         }
