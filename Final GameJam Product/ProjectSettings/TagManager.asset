@@ -7,6 +7,7 @@ TagManager:
   - oretag
   - leaftag
   - dmgtag
+  - tree
   layers:
   - Default
   - TransparentFX
