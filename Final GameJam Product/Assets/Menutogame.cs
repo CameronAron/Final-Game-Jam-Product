@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class Menutogame : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,10 +14,14 @@ public class Menutogame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SceneManager.LoadScene("End");
+      
     }
     private void OnMouseDown()
     {
-      
+        lod();
+    }
+   public void lod()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
