@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 6019420365994415690}
   - component: {fileID: 6019420365994415693}
   - component: {fileID: 3475245561705965246}
-  - component: {fileID: 8602359986416055680}
+  - component: {fileID: 3388203201023703748}
   m_Layer: 0
   m_Name: brrr_bees
   m_TagString: Untagged
@@ -304,7 +304,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8602359986416055680
+--- !u!114 &3388203201023703748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
