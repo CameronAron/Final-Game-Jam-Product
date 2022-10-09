@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class buttoncall : MonoBehaviour
 {
-    public float dmg = 1;
+    public float Dmg = 11;
     private mineral cur;
     
    
@@ -30,7 +30,7 @@ public class buttoncall : MonoBehaviour
         {
             if (cur.leafCurrency >= 10 && cur.oreCurrency >= 10)
             {
-                dmg += 1;
+                Dmg += 1;
                 cur.leafCurrency -= 10;
                 cur.oreCurrency -= 10;
                
