@@ -9,6 +9,8 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
     public float enemyCurrentHealth;
     public float dmg = 1f;
     public float strongDamage = 5f;
+    public float edmg = 0f;
+
 
     private void Start()
     {
