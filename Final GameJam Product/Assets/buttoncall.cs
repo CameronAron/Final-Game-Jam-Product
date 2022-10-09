@@ -6,21 +6,9 @@ using UnityEngine.UI;
 public class buttoncall : MonoBehaviour
 {
     public float dmg = 1;
+
+    
    
-    bool dmg1 = false;
-    SerializeField dmg_1;
-
-    bool dmg2 = false;
-    SerializeField dmg_2;
-
-    bool dmg3 = false;
-    SerializeField dmg_3;
-
-    bool dmg4 = false;
-    SerializeField dmg_4;
-
-    bool dmg5 = false;
-    SerializeField dmg_5;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,45 +20,51 @@ public class buttoncall : MonoBehaviour
     {
         
     }
+    private void OnMouseDown()
+    {
+        Dmgup();
+        Leafup();
+        Oreup();
+    }
     public void Dmgup()
     {
-        dmg = 2;
+     //   if (CompareTag == dmgtag)
+        {
+            if (FindObjectOfType<mineral>().leafCurrency >= 10 && FindObjectOfType<mineral>().oreCurrency >= 10)
+            {
+                dmg += 1;
+                FindObjectOfType<mineral>().leafCurrency -= 10;
+                FindObjectOfType<mineral>().oreCurrency -= 10;
+               
+            }
+        }
     }
-    void upgrade()
+    public void Leafup()
     {
-        if (dmg1 == true)
+      //  if (leaftag)
         {
-            dmg = 2;
+            if (FindObjectOfType<mineral>().leafCurrency >= 20)
+            {
+                FindObjectOfType<mineral>().leafCurrency -= 20;
+                FindObjectOfType<mineral>().Lps += 0.05f;
+            }
         }
-        if (dmg2 == true)
-        {
-            dmg = 3;
-            dmg1 = false;
-        }
-        if (dmg3 == true)
-        {
-            dmg = 5;
-            dmg2 = false;
-        }
-        if (dmg4 == true)
-        {
-            dmg = 7;
-            dmg3 = false;
-        }
-        if (dmg5 == true)
-        {
-            dmg = 10;
-            dmg4 = false;
-        }
+          
     }
-    public void OnMouseDown()
+    public void Oreup()
     {
-     //   if (OnMouseDown && (GetComponent<mineral>().oreCurrency >= 10))
+      //  if (oretag == tag)
         {
-            GetComponent<mineral>().oreCurrency -= 10;
-           
-            dmg1 = true;
-            
+            if (FindObjectOfType<mineral>().oreCurrency >= 25)
+            {
+
+                FindObjectOfType<mineral>().oreCurrency -= 25;
+                FindObjectOfType<mineral>().Ops += 0.05f;
+
+            }
         }
     }
+  
+     
+  
 }

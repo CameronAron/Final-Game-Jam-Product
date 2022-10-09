@@ -15,7 +15,7 @@ public class gameend : MonoBehaviour
     void Update()
     {
        
-       if (GetComponent<mineral>().ageCurrency >= 100)
+       if (FindObjectOfType<mineral>().ageCurrency >= 100)
         {
             SceneManager.LoadScene("End");
         }

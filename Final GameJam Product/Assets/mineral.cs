@@ -13,6 +13,8 @@ public class mineral : MonoBehaviour
    public  float leafCurrency = 0;
     public float LCT = 0;
     public float Lps = 0;
+
+    public float thp = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,8 @@ public class mineral : MonoBehaviour
     }
     void currencychangeore()
     {
-
+        thp += 0.1f * (ageCurrency / 10);
+        // tree regeneration = 0.1 hp /sec * age/10
         oreCurrency += Ops;
 
 

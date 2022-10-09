@@ -10,7 +10,7 @@ public class clickOnItem : MonoBehaviour
     Vector2 pos;
     float x;
     float y;
-    private void Start()
+    public void Start()
     {
         Invoke("destory", 10);
         x = Random.Range(-38, 38);
@@ -21,7 +21,7 @@ public class clickOnItem : MonoBehaviour
     }
 
 
-    void OnMouseDown()
+   public void OnMouseDown()
     {
         if (script.whatCursor == "default")
         {

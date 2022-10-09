@@ -15,7 +15,8 @@ public class cheatcodes : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {                
-           GetComponent<mineral>().ageCurrency += 10;
+           
+            FindObjectOfType<mineral>().ageCurrency += 10;
         }
     }
 }
