@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class clickOnItem : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class clickOnItem : MonoBehaviour
     float y;
     private void Start()
     {
-     //  Instantiate<destroy>()
+        Invoke("destory", 10);
         x = Random.Range(-38, 38);
         y = Random.Range(-16, 16);
 
@@ -34,8 +35,8 @@ public class clickOnItem : MonoBehaviour
         //Debug.Log(script.whatCursor + " is the cursor currently selected");
     }
     void destory()
-    { 
-    
+    {
+        Destroy(gameObject);
     }
     private void Update()
     {
