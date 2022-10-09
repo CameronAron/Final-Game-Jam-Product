@@ -37,6 +37,7 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
         if (enemyCurrentHealth < 1)
         {
             Destroy(gameObject);
+            FindObjectOfType<mineral>().oreCurrency += (Random.Range(1, 3));
         }
     }
 
