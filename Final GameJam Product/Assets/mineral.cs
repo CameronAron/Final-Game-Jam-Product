@@ -6,11 +6,11 @@ public class mineral : MonoBehaviour
 {
    public float ageCurrency = 0;
     
-   public float oreCurrency = 0;
+   public float oreCurrency = 1;
     public float OCT = 0;
     public float Ops = 0;
 
-   public  float leafCurrency = 0;
+   public  float leafCurrency = 1;
     public float LCT = 0;
     public float Lps = 0;
 

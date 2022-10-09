@@ -19,6 +19,10 @@ public class gameend : MonoBehaviour
         {
             SceneManager.LoadScene("End");
         }
+        if (GetComponent<mineral>().thp <= 0)
+        {
+            SceneManager.LoadScene("Intro");
+        }
     }
     public void insta()
     {
