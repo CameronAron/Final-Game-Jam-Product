@@ -2952,7 +2952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68.95737, y: 20.274399}
+  m_AnchoredPosition: {x: -67.1, y: 84.7}
   m_SizeDelta: {x: 305.6635, y: 143.1257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638422660
@@ -2999,13 +2999,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: c785c394f4c8cce458d8d8b032da7945, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2062066680}
+        m_TargetAssemblyTypeName: buttoncall, Assembly-CSharp
+        m_MethodName: Dmgup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4582,6 +4582,7 @@ GameObject:
   - component: {fileID: 1384440593}
   - component: {fileID: 1384440592}
   - component: {fileID: 1384440591}
+  - component: {fileID: 1384440594}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4639,6 +4640,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384440594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384440590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c785c394f4c8cce458d8d8b032da7945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
 --- !u!1 &1423726527
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,6 +5964,7 @@ GameObject:
   - component: {fileID: 2062066676}
   - component: {fileID: 2062066678}
   - component: {fileID: 2062066679}
+  - component: {fileID: 2062066680}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -6015,3 +6030,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c00a1a42a8c34df44a68278e45bf7dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2062066680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062066675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c785c394f4c8cce458d8d8b032da7945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1

@@ -31,6 +31,10 @@ public class buttoncall : MonoBehaviour
     {
         
     }
+    public void Dmgup()
+    {
+        dmg = 2;
+    }
     void upgrade()
     {
         if (dmg1 == true)

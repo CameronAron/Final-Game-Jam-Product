@@ -30,27 +30,27 @@ public class CameraMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (rb.position.x > 25.001)
+        if (rb.position.x > 30.001)
         {
-            transform.position = new Vector3(25, transform.position.y, -3);
+            transform.position = new Vector3(30, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.x < -25.001)
+        if (rb.position.x < -30.001)
         {
-            transform.position = new Vector3(-25, transform.position.y, -3);
+            transform.position = new Vector3(-30, transform.position.y, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.y > 12.001)
+        if (rb.position.y > 17.001)
         {
-            transform.position = new Vector3(transform.position.x, 12, -3);
+            transform.position = new Vector3(transform.position.x, 17, -3);
             //transform.position.x = 5.39;
         }
 
-        if (rb.position.y < -12.001)
+        if (rb.position.y < -17.001)
         {
-            transform.position = new Vector3(transform.position.x, -12, -3);
+            transform.position = new Vector3(transform.position.x, -17, -3);
             //transform.position.x = 5.39;
         }
 
