@@ -9,6 +9,7 @@ public class clickOnEnemyWeakToWater : MonoBehaviour
     public float enemyCurrentHealth;
     public float weakDamage = 1f;
     public float strongDamage = 5f;
+    public float edmg = 0f;
 
     private void Start()
     {
