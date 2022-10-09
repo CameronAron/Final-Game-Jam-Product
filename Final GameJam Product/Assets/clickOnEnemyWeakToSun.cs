@@ -31,7 +31,7 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(enemyCurrentHealth);
+        //Debug.Log(enemyCurrentHealth);
         if (enemyCurrentHealth < 1)
         {
             Destroy(gameObject);
