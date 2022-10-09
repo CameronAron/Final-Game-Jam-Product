@@ -18,9 +18,9 @@ public class treehit : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //      FindObjectOfType<mineral>().thp -= FindObjectOfType<enemyMovement>().edmg;
-        if (collision.collider.tag == "bird")
-        { 
-      //  thp -= edmg
+        if (collision.collider.tag == "pollen")
+        {
+            FindObjectOfType<mineral>().thp -= FindObjectOfType<buttoncall>().Dmg;
         }
     }
 }

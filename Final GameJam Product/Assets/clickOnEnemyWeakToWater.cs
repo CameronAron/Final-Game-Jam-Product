@@ -15,29 +15,29 @@ public class clickOnEnemyWeakToWater : MonoBehaviour
         enemyCurrentHealth = enemyMaxHealth;
     }
 
-
-    void OnMouseDown()
-    {
-        buttoncall buttonCall = FindObjectOfType<buttoncall>();
-        if (script.whatCursor == "water")
-        {
-            enemyCurrentHealth -= 3 * buttonCall.Dmg;
-        }
-        else
-        {
-            enemyCurrentHealth -= buttonCall.Dmg;
-        }
-        //Debug.Log(script.whatCursor + " is the cursor currently selected");
-    }
-
     private void Update()
     {
         //Debug.Log(enemyCurrentHealth);
         if (enemyCurrentHealth < 1)
         {
-            FindObjectOfType<mineral>().leafCurrency += (Random.Range(1,3));
+            FindObjectOfType<mineral>().leafCurrency += (Random.Range(1, 3));
             Destroy(gameObject);
         }
     }
+    public void OnMouseDown()
+    {
+        buttoncall buttonCall = FindObjectOfType<buttoncall>();
+        if (script.whatCursor == "water")
+        {
+            enemyCurrentHealth -= 3 * weakDamage;
+        }
+        else
+        {
+            enemyCurrentHealth -= weakDamage;
+            //Debug.Log(script.whatCursor + " is the cursor currently selected");
+        }
 
-}
+    }
+    }
+
+    

@@ -12,6 +12,8 @@ public class clickOnItem : MonoBehaviour
     float y;
     public void Start()
     {
+       
+       
         Invoke("destory", 10);
         x = Random.Range(-38, 38);
         y = Random.Range(-16, 16);

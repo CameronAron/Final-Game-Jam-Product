@@ -9,7 +9,7 @@ public class hpui : MonoBehaviour
     public mineral treehp;
     public TextMeshProUGUI text;
     //
-    float treehpp = 0;
+    float treehpp = 10;
 
     //    public Text ValueText;
 

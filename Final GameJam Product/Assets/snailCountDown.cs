@@ -7,7 +7,7 @@ public class snailCountDown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Object.Destroy(gameObject, 10.25f);
+        Object.Destroy(gameObject, 11.25f);
     }
 
     // Update is called once per frame

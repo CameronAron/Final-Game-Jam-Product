@@ -7,7 +7,7 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
     public CursorManager script;
     public float enemyMaxHealth = 20f;
     public float enemyCurrentHealth;
-    public float weakDamage = 1f;
+    public float dmg = 1f;
     public float strongDamage = 5f;
 
     private void Start()
@@ -24,7 +24,7 @@ public class clickOnEnemyWeakToSun : MonoBehaviour
         }
         else
         {
-            enemyCurrentHealth = enemyCurrentHealth - weakDamage;
+            enemyCurrentHealth -= dmg;
         }
         //Debug.Log(script.whatCursor + " is the cursor currently selected");
     }
